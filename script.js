@@ -21,6 +21,9 @@ function addition(numbers) {
 function subtraction(numbers) {
     return numbers.reduce((difference, num) => difference - num);
 }
+function multiplication(numbers) {
+    return numbers.reduce((product, num) => product * num, 1);
+}
 
 function calculateResult() {
     try {
@@ -42,6 +45,10 @@ function calculateResult() {
                     break;
                 case '-':
                     result = subtraction(numbers);
+                    break;
+                case '*':
+                case '×':
+                    result = multiplication(numbers);
                     break;
                 default:
                     throw new Error("Invalid operator");
