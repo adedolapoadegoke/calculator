@@ -18,7 +18,9 @@ function clearDisplay() {
 function addition(numbers) {
     return numbers.reduce((sum, num) => sum + num, 0);
 }
-
+function subtraction(numbers) {
+    return numbers.reduce((difference, num) => difference - num);
+}
 
 function calculateResult() {
     try {
@@ -37,6 +39,9 @@ function calculateResult() {
             switch (operators[0]) {
                 case '+':
                     result = addition(numbers);
+                    break;
+                case '-':
+                    result = subtraction(numbers);
                     break;
                 default:
                     throw new Error("Invalid operator");
