@@ -18,14 +18,21 @@ function clearDisplay() {
 function addition(numbers) {
     return numbers.reduce((sum, num) => sum + num, 0);
 }
+
 function subtraction(numbers) {
     return numbers.reduce((difference, num) => difference - num);
 }
+
 function multiplication(numbers) {
     return numbers.reduce((product, num) => product * num, 1);
 }
+
 function division(numbers) {
     return numbers.reduce((quotient, num) => quotient / num);
+}
+
+function modOperation(numbers) {
+    return numbers;
 }
 
 function calculateResult() {
